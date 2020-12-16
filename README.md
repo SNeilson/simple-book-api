@@ -1,6 +1,6 @@
 ## 🚀 Get Up and Running in 5 Minutes
 
-This is a simple demo book API
+This is a simple demo book API that allows you to view, create, update and delete books and run two simple unit tests using mocha, should, sinon and supertest.
 
 1. **Install the node_modules**
 
@@ -37,4 +37,12 @@ If you've used MongoDB Atlas you can import the books.json file into MongoDB Atl
 npm start
 ```
 
-then go to http://localhost:4000/api/books
+When the server has started simply go to http://localhost:4000/api/books
+
+6. **Running the tests**
+
+To run the demo tests simply run
+
+```shell
+npm test
+```

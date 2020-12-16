@@ -22,7 +22,7 @@ describe('Book Controller Tests', () => {
       }
 
       const controller = booksController(Book)
-      controller.post(req, res)
+      controller.createNewBook(req, res)
 
       res.status
         .calledWith(400)
