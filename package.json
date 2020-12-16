@@ -1,0 +1,31 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "Node.js API server",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*Tests.js",
+    "start": "nodemon app.js"
+  },
+  "author": "Stuart Neilson",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "should": "^13.2.3",
+    "sinon": "^9.2.2",
+    "supertest": "^6.0.1"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node-modules/**/node-modules"
+    ]
+  }
+}
